@@ -30,7 +30,7 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io/
             -Dsonar.login=e8432b2cb5ace33754dedef386024df2edcfb8d5
             -Dsonar.organization=Teeworks1
-            -Dsonar.projectKey=Teeworks1
+            -Dsonar.projectKey=hprofile
             -Dsonar.sources=$GITHUB_WORKSPACE
           
 
