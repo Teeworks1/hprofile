@@ -1,0 +1,14 @@
+name: Hprofile CI
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  Testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build the Docker image
+        run: echo "workflow works!"
+      - name: Build Image
+        run: echo "building docker images!"
