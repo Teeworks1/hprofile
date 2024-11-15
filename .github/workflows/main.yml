@@ -23,9 +23,6 @@ jobs:
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
          # Setup sonar-scanner
-      - name: Setup SonarQube
-        uses: warchant/setup-sonar-scanner@v7
-        # Run sonar-scanner
       - name: Java 11 
         uses: actions/setup-java@v4
         with:
