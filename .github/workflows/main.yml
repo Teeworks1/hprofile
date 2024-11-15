@@ -19,7 +19,20 @@ jobs:
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '21'
-      
+          # Setup sonar-scanner
+      - name: Setup SonarQube
+        uses: warchant/setup-sonar-scanner@v7
+      - name: build docker
+        run: echo "building docker!"
+      # Run sonar-scanner
+      - name: SonarQube Scan
+        run: sonar-scanner
+            -Dsonar.host.url=https://sonarcloud.io/
+            -Dsonar.login=e8432b2cb5ace33754dedef386024df2edcfb8d5
+            -Dsonar.organization=Teeworks1
+            -Dsonar.projectKey=hprofile
+            -Dsonar.sources=$GITHUB_WORKSPACE
+          
 
 
- 
+    
