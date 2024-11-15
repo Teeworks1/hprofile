@@ -27,10 +27,10 @@ jobs:
       # Run sonar-scanner
       - name: SonarQube Scan
         run: sonar-scanner
-            -Dsonar.host.url=${{ secrets.SONAR_URL }}
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
-            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+            -Dsonar.host.url=https://sonarcloud.io/
+            -Dsonar.login=e8432b2cb5ace33754dedef386024df2edcfb8d5
+            -Dsonar.organization=Teeworks1
+            -Dsonar.projectKey=GitHubActions
             -Dsonar.sources=$GITHUB_WORKSPACE
           
 
