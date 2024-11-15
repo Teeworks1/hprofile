@@ -1,5 +1,9 @@
 name: Hprofile CI
-on: workflow_dispatch
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 jobs:
   Testing:
     runs-on: ubuntu-latest
@@ -7,4 +11,7 @@ jobs:
       - name: Build the Docker image
         run: echo "workflow works!"
       - name: Build Image
-        run: echo "building docker image!"
+        run: echo "building docker images!"
+
+ 
+
