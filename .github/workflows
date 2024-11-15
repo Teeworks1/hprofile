@@ -1,9 +1,0 @@
-name: Hprofile CI
-on: workflow_dispatch
-jobs:
-  Testing:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build the Docker image
-        run: echo "workflow works!"
-#no name
