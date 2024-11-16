@@ -22,8 +22,6 @@ jobs:
           # Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
-      - name: Dummy Docker build
-        run: echo "Docker build!"
          # Setup sonar-scanner
       - name: Java 11 
         uses: actions/setup-java@v4
